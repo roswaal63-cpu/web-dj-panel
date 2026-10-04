@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WEB DJ PANEL</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="panel">
+<h1>🎧 WEB DJ PANEL</h1>
+<input id="api" placeholder="URL API, contoh https://nama-api.onrender.com">
+<input id="key" type="password" placeholder="Panel Key">
+<input id="id" placeholder="Roblox Audio ID">
+<input id="name" placeholder="Nama lagu">
+<div class="row">
+<label>Speed<input id="speed" type="number" value="0.43" min="0.1" max="2" step="0.01"></label>
+<label>Volume<input id="vol" type="number" value="1" min="0" max="10" step="0.1"></label>
+</div>
+<div class="grid">
+<button onclick="send('play')">▶ PLAY</button>
+<button onclick="send('pause')">⏸ PAUSE</button>
+<button onclick="send('stop')">⏹ STOP</button>
+<button onclick="send('previous')">⏮ PREV</button>
+<button onclick="send('next')">⏭ NEXT</button>
+<button onclick="send('setSpeed')">⚡ SPEED</button>
+</div>
+<p id="status">Siap.</p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
